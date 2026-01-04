@@ -5,6 +5,8 @@ import laravel from 'laravel-vite-plugin';
 import { defineConfig } from 'vite';
 import path from 'path';
 
+const isVercel = process.env.VERCEL === '1'
+
 export default defineConfig({
     plugins: [
         laravel({
@@ -18,7 +20,7 @@ export default defineConfig({
             },
         }),
         tailwindcss(),
-        wayfinder({
+        !isVercel && wayfinder({
             formVariants: true,
         }),
     ],
