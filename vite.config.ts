@@ -32,4 +32,8 @@ export default defineConfig({
             "@": path.resolve(__dirname,"resources/js"),
         },
     },
+    build: {
+        outDir: 'public/build',  // put compiled assets in public/build
+        emptyOutDir: true,
+    },
 });
