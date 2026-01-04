@@ -30,7 +30,8 @@
             }
         </style>
 
-        <title inertia>{{ config('app.name', 'Doutte') }}</title>
+        <!-- <title inertia>{{ config('app.name', 'Doutte') }}</title> -->
+        <title>Doutte</title>
 
         <link rel="icon" type="image/jpg" href="/image/logo_doutte.jpg" sizes="any">
         <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
