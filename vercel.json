@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "vite.config.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "artisan",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/public/index.php" }
+  ]
+}
